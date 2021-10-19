@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>OneBite | Landing Page</title>
    <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
    
@@ -14,10 +15,11 @@
          <div class="header_body">
             <nav class="header_nav">
                <ul>
-                  <li><a href="#">Home</a></li>
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="#">About us</a></li>
                   <li><a href="#">Portfolio</a></li>
                   <li><a href="#">Contacts</a></li>
+                  <li class="a-blog"><a href="blog.html">Our Blog!</a></li>
                </ul>
             </nav>
             <div class="header_phones">
@@ -145,13 +147,44 @@
                </div>
                <div class="contact_line">
                   <div class="line-text">
-                     <span>or insert your phone <br> and we’ll callback you</span>
+                     <span>or insert your phone <br> and we’ll call back to you</span>
                   </div>
                </div>
                <form action="#" class="contact_form">
-                  <input type="text" required placeholder="Type your phone">
+                  <input type="tel" required placeholder="Type your phone">
                   <button type="submit">Send</button>
                </form>
+
+               <form action="#" class="newsletter_form">
+                  <label for="" class="newsletter_heading">See news about us (newsletter)</label><br>
+                  
+                  <input type="email" required placeholder="Type email">
+                  <input type="password" required placeholder="Type password">
+                  <div class="newsletter_options">
+                     <label class="sub-heading">What do you want to see?</label><br>
+                     <input type="checkbox" name="type-letter">
+                     <label>Main news (blog)</label><br>
+                     <input type="checkbox" name="type-letter">
+                     <label>Ads</label><br>
+                     <input type="checkbox" name="type-letter">
+                     <label>Our works</label><br>
+                     <label class="sub-heading">For what intesivity?</label><br>
+                     <input type="radio" name="timing" required>
+                     <label>3 times for a week</label><br>
+                     <input type="radio" name="timing" required>
+                     <label>Everyday</label><br>
+                     <select name="lang" required>
+                        <option>RU</option>
+                        <option>UA</option>
+                        <option>UK</option>
+                        <option>ENG</option>
+                        <option>SP</option>
+                     </select>
+                  </div>
+                  
+                  <button type="submit">Send</button>
+               </form>
+
             </div>
          </div>
       </div>
